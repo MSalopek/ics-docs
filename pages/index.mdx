@@ -1,11 +1,17 @@
+export function Head() {
+    return <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Replicated Security Docs | Learn more about Replicated Security on Cosmos Hub" />
+      <meta property="og:description" content="Docs page for Replicated Security aka. Interchain Security. Find overview, protocol details, implementation, validator instructions and more..." />
+    </>
+}
+
 # Introduction
  
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+Welcome to Replicated Security docs page!
 
-## What is Nextra?
+To avoid further confusion, we need to inform you that Replicated Security has more than one alias. The two most popular ones are `Interchain Security (ICS)`, `Cross-chain Validation (CCV)` - you might see them used on twitter and in various blog posts.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+# Synopsis
+CCV stands for cross chain validation and refers to the subset of Interchain Security related to the staking and slashing communication between the provider and consumer blockchains.
+The provider blockchain communicates staking changes to consumer blockchain(s), while the consumer blockchain may communicate slashing evidence to the provider blockchain.
