@@ -12,6 +12,16 @@ Welcome to Replicated Security docs page!
 
 To avoid further confusion, we need to inform you that Replicated Security has more than one alias. The two most popular ones are `Interchain Security (ICS)`, `Cross-chain Validation (CCV)` - you might see them used on twitter and in various blog posts.
 
+TODO: other definitions here?
+
 # Synopsis
-CCV stands for cross chain validation and refers to the subset of Interchain Security related to the staking and slashing communication between the provider and consumer blockchains.
-The provider blockchain communicates staking changes to consumer blockchain(s), while the consumer blockchain may communicate slashing evidence to the provider blockchain.
+
+Replicated security is designed to replicate the security and decentralization of a validator set across multiple blockchains.
+That is, a "provider chain" such as the Cosmos Hub can share its exact validator set with multiple consumer chains by communicating changes in its validator set over IBC.
+Provider delegators and validators are held accountable for infractions like equivocation by allowing consumer chains to tombstone validators over IBC. See [this blog post](https://informal.systems/blog/governance-gated-vs-automatic-equivocation-slashing) for more details.
+
+TODO: TLDR of unbonding
+
+TODO: TLDR of rewards distribution
+
+If you're interested in further technical details, read onto the ICS protocol section.
